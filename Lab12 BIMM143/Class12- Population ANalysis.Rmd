@@ -1,0 +1,34 @@
+---
+title: 'Class12: Population Scale Analysis'
+author: "Richard Gao - PID:A16490010"
+date: "2024-02-18"
+output: pdf_document
+---
+
+Read this file into R and determine the sample size for each genotype and their corresponding median expression levels for each of these genotypes.
+```{r}
+data <- read.table("ExpressionResults.txt")
+head(data)
+
+summary(data)
+
+# Determines sample size for each genotype
+table(data$geno)
+
+# Corresponding median expression levels for each genotype
+median(data$exp[data$geno == "A/A"])
+median(data$exp[data$geno == "A/G"])
+median(data$exp[data$geno == "G/G"])
+
+```
+
+Generate a boxplot with a box per genotype, what could you infer from the relative expression value between A/A and G/G displayed in this plot? Does the SNP effect the expression of ORMDL3?
+
+```{r}
+library(ggplot2)
+
+ggplot(data, aes(geno, exp, fill=geno)) +
+    geom_boxplot(notch = TRUE)
+
+```
+
