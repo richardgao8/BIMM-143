@@ -1,2 +1,5 @@
 # BIMM-143
-This repo is for my UCSD bioinformatics class.
+
+My class work from W24 for BIMM143 at UC San Diego. (https://bioboot.github.io/bimm143_W24/)
+
+## Contents
