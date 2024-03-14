@@ -4,12 +4,12 @@ My class work from W24 for [BIMM143 at UC San Diego]. (https://bioboot.github.io
 
 ## Contents
 
-- Class 1 [](https://github.com/richardgao8/BIMM-143/blob/main/Lab1%20BIMM143/lab1%20BIMM143.pdf)
-- Class 2 [](https://github.com/richardgao8/BIMM-143/blob/main/Lab2%20BIMM143/Lab2%20BIMM143.pdf)
-- Class 3 [](https://github.com/richardgao8/BIMM-143/blob/main/Lab3%20BIMM143/lab3%20BIMM143.pdf)
-- Class 4 [](https://github.com/richardgao8/BIMM-143/blob/main/Lab4%20BIMM143/lab4%20BIMM143.pdf)
+- Class 1 [Welcome to Bioinformatics](https://github.com/richardgao8/BIMM-143/blob/main/Lab1%20BIMM143/lab1%20BIMM143.pdf)
+- Class 2 [Sequence alignment fundamentals, algorithms and applications](https://github.com/richardgao8/BIMM-143/blob/main/Lab2%20BIMM143/Lab2%20BIMM143.pdf)
+- Class 3 [Advanced sequence alignment and database searching](https://github.com/richardgao8/BIMM-143/blob/main/Lab3%20BIMM143/lab3%20BIMM143.pdf)
+- Class 4 [Bioinformatics data analysis with R](https://github.com/richardgao8/BIMM-143/blob/main/Lab4%20BIMM143/lab4%20BIMM143.pdf)
 - Class 5 [Data viz with ggplot2](https://github.com/richardgao8/BIMM-143/blob/main/Lab5%20BIMM143/class05/class05.pdf)
-- Class 6 [](https://github.com/richardgao8/BIMM-143/blob/main/Lab6%20BIMM143/class06.pdf)
+- Class 6 [R functions and R packages from CRAN and BioConductor](https://github.com/richardgao8/BIMM-143/blob/main/Lab6%20BIMM143/class06.pdf)
 - Class 7 [Introduction to machine learning for Bioinformatics 1](https://github.com/richardgao8/BIMM-143/blob/main/Class07/class07.pdf)
 - Class 8 [](https://github.com/richardgao8/BIMM-143/blob/main/Lab8%20BIMM143/class08.pdf)
 - Class 9 [](https://github.com/richardgao8/BIMM-143/blob/main/Class09/class09.pdf)
