@@ -1,0 +1,38 @@
+# add .. to do relative path
+cd ..
+
+# ~ automatically correlates to /Users/richardgao (home shortcut)
+ls ~/Downloads
+
+# list all screenshots
+ls ~/Desktop/Screenshot\ 202*
+  
+# create a file
+touch my_text_notes.txt
+
+# Remove a file
+rm notes.txt text my
+
+# a very basic text editor
+nano my_text_notes.txt
+
+Instance ID
+i-01213d64922c55711 (bimm143_richard_gao)
+
+Public IP address
+ 34.212.82.8
+
+Control+C to kill process
+Control+Z to sleep process
+
+bg - background
+fg - bring to foreground after sleeping
+
+scp - secure copy from any computer to any computer
+
+Run this command, if necessary, to ensure your key is not publicaly viewable.
+ chmod 400 "bimm143_richard_gao.pem"
+Connect to your instance using its Public DNS:
+ ec2-34-212-82-80.us-west-2.compute.amazonaws.com
+Example:
+ ssh -i "bimm143_richard_gao.pem" ubuntu@ec2-34-212-82-80.us-west-2.compute.amazonaws.com

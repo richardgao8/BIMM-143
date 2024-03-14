@@ -1,0 +1,1 @@
+ssh -i "bimm143_richard_gao.pem" ubuntu@ec2-34-210-228-189.us-west-2.compute.amazonaws.com

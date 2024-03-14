@@ -1,0 +1,33 @@
+---
+title: "Class16 - R Graph"
+author: "Richard Gao (PID: A16490010)"
+format: pdf
+---
+
+```{r}
+data <- read.table("~/Desktop/class16/mm-second.x.zebrafish.tsv")
+colnames(data) <- c("qseqid", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
+```
+
+Make a histogram of the $bitscore values. You may want to set the optional breaks to be a larger number (e.g. breaks=30).
+```{r}
+hist(data$bitscore, breaks=30)
+```
+> What do you notice here? Note that larger bitscores are better.
+
+I notice that the histogram is bimodal and right-skewed, there are not many larger bitscores which makes sense since they are "better" so will probably be rarer.
+
+```{r}
+library(ggplot2)
+ggplot(data, aes(pident, bitscore)) + geom_point(alpha=0.1) 
+```
+> Is there a straightforward relationship between percent identity ($pident) and bitscore ($bitscore) for the alignments we generated?
+
+No there seems to be a slight positive correlation but there must be another factor involved (length of alignment).
+
+
+```{r}
+ggplot(data, aes((data$pident * (data$qend - data$qstart)), bitscore)) + geom_point(alpha=0.1) + geom_smooth()
+```
+
+

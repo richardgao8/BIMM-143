@@ -1,0 +1,44 @@
+---
+title: "Class19: Cancer Mutation Mini-Project"
+author: "Richard Gao (PID: A16490010)"
+format: pdf
+---
+
+> Q1. Use blast online or within R...
+
+```{r}
+library(bio3d)
+df <- read.fasta("A16490010_mutant_seq.fa")
+df
+```
+
+
+> Q2. What are the tumor specific mutations.
+Use the bio3d package and read my sequence pair into R
+
+```{r}
+library(Biostrings)
+df$id
+df$ali[1, ]
+```
+
+Score residue conservation and find the unconserved positions...
+```{r}
+mutInds <- which(conserv(df) != 1.0)
+```
+
+```{r}
+df$ali[, mutInds]
+```
+
+```{r}
+paste( df$ali[1, mutInds], mutInds, df$ali[2, mutInds])
+```
+
+
+> Q3. Do your mutations cluster to any particular domain and if so give the name and PFAM id of this domain? Alternately note whether your protein is single domain and provide it’s PFAM id/accession and name (e.g. PF00613 and PI3Ka).
+
+  My mutations cluster in the PF01056.21 domain. My protein has three domains in total: PF01056.21, PF02344.18, and PF00010.29.
+
+
+
